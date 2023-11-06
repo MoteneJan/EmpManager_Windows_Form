@@ -1,0 +1,12 @@
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.LoginForm.resources
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.RegistrationForm.resources
