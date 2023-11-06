@@ -110,6 +110,7 @@
             this.chk_Password.TabIndex = 6;
             this.chk_Password.Text = "Show Password";
             this.chk_Password.UseVisualStyleBackColor = true;
+            this.chk_Password.CheckedChanged += new System.EventHandler(this.chk_Password_CheckedChanged);
             // 
             // btnLogin
             // 
@@ -126,6 +127,7 @@
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 

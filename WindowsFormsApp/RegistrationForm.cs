@@ -47,7 +47,7 @@ namespace WindowsFormsApp
                         con.Open();
 
                         //Checks if the user already exist
-                        string selectUsername = "SELECT COUNT(id) FROM users WHERE username = @user";
+                        string selectUsername = "SELECT COUNT(id) FROM Users WHERE username = @user";
 
                         using(SqlCommand checkUser = new SqlCommand(selectUsername, con))
                         {
