@@ -35,7 +35,7 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.chkPassword = new System.Windows.Forms.CheckBox();
+            this.chk_Password = new System.Windows.Forms.CheckBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -101,15 +101,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Password:";
             // 
-            // chkPassword
+            // chk_Password
             // 
-            this.chkPassword.AutoSize = true;
-            this.chkPassword.Location = new System.Drawing.Point(432, 256);
-            this.chkPassword.Name = "chkPassword";
-            this.chkPassword.Size = new System.Drawing.Size(117, 20);
-            this.chkPassword.TabIndex = 6;
-            this.chkPassword.Text = "Show Password";
-            this.chkPassword.UseVisualStyleBackColor = true;
+            this.chk_Password.AutoSize = true;
+            this.chk_Password.Location = new System.Drawing.Point(432, 256);
+            this.chk_Password.Name = "chk_Password";
+            this.chk_Password.Size = new System.Drawing.Size(117, 20);
+            this.chk_Password.TabIndex = 6;
+            this.chk_Password.Text = "Show Password";
+            this.chk_Password.UseVisualStyleBackColor = true;
             // 
             // btnLogin
             // 
@@ -172,7 +172,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(576, 381);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.chkPassword);
+            this.Controls.Add(this.chk_Password);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUsername);
@@ -201,7 +201,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox chkPassword;
+        private System.Windows.Forms.CheckBox chk_Password;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label label5;

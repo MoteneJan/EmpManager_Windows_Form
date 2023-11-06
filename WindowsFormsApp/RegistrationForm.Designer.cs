@@ -61,6 +61,7 @@
             this.btn_Register.TabIndex = 15;
             this.btn_Register.Text = "REGISTER";
             this.btn_Register.UseVisualStyleBackColor = false;
+            this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
             // 
             // txtSignUpPassword2
             // 
@@ -185,6 +186,7 @@
             this.chkPassword.TabIndex = 18;
             this.chkPassword.Text = "Show Password";
             this.chkPassword.UseVisualStyleBackColor = true;
+            this.chkPassword.CheckedChanged += new System.EventHandler(this.chkPassword_CheckedChanged);
             // 
             // RegistrationForm
             // 
