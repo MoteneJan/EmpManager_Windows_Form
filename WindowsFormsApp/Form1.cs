@@ -29,7 +29,7 @@ namespace WindowsFormsApp
 
         private void chk_Password_CheckedChanged(object sender, EventArgs e)
         {
-           // chk_Password.PasswordChar = chk_Password.Checked ? '\0': '*';
+           //chk_Password.PasswordChar = chk_Password.Checked ? '\0': '*';
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -61,12 +61,15 @@ namespace WindowsFormsApp
                             if (table.Rows.Count >= 1)
                             {
                                 MessageBox.Show("Login Successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                MainForm mainForm = new MainForm();
+                                mainForm.Show();
+                                this.Hide();
                             }
                             else
                             {
                                 MessageBox.Show("Incorrect Username/ Password!", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
-
                         }          
                        
                     }

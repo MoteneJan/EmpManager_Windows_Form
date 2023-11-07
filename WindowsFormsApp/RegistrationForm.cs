@@ -34,7 +34,7 @@ namespace WindowsFormsApp
 
         private void btn_Register_Click(object sender, EventArgs e)
         {
-            if(txtSignUpUsername.Text.Length < 0 || txtSignUpPassword.Text.Length < 0)
+            if(txtSignUpUsername.Text.Length <= 0 || txtSignUpPassword.Text.Length <= 0 || txtSignUpPassword2.Text.Length <= 0)
             {
                 MessageBox.Show("Please fill all the required fields!", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
