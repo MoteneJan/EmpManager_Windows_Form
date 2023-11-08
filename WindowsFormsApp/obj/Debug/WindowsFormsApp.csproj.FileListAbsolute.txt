@@ -11,3 +11,6 @@ C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsForms
 C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.LoginForm.resources
 C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.RegistrationForm.resources
 C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.MainForm.resources
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.AddEmployee.resources
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.Dashboard.resources
+C:\Users\moten\Documents\TUTORIALS\PROJECTS\EmpManager_Windows_Form\WindowsFormsApp\obj\Debug\WindowsFormsApp.Salary.resources

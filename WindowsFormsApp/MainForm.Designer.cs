@@ -33,26 +33,32 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblGreeting = new System.Windows.Forms.Label();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnSalary = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.salary1 = new WindowsFormsApp.Salary();
+            this.addEmployee1 = new WindowsFormsApp.AddEmployee();
+            this.dashboard1 = new WindowsFormsApp.Dashboard();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(97)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1011, 38);
+            this.panel1.Size = new System.Drawing.Size(1075, 38);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -64,22 +70,24 @@
             this.label1.Size = new System.Drawing.Size(217, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "EMPLOYEE MANAGEMENT SYSTEM";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(11)))), ((int)(((byte)(75)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.btnLogout);
             this.panel2.Controls.Add(this.btnSalary);
             this.panel2.Controls.Add(this.btnAddEmployee);
             this.panel2.Controls.Add(this.btnDashboard);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblGreeting);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 38);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(248, 614);
+            this.panel2.Size = new System.Drawing.Size(248, 636);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox1
             // 
@@ -91,17 +99,19 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label2
+            // lblGreeting
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(64, 136);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Welcome, User";
+            this.lblGreeting.AutoSize = true;
+            this.lblGreeting.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreeting.ForeColor = System.Drawing.Color.White;
+            this.lblGreeting.Location = new System.Drawing.Point(64, 136);
+            this.lblGreeting.Name = "lblGreeting";
+            this.lblGreeting.Size = new System.Drawing.Size(130, 19);
+            this.lblGreeting.TabIndex = 1;
+            this.lblGreeting.Text = "Welcome, User";
+            this.lblGreeting.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnDashboard
             // 
@@ -119,6 +129,7 @@
             this.btnDashboard.TabIndex = 9;
             this.btnDashboard.Text = "DASHBOARD";
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnAddEmployee
             // 
@@ -136,6 +147,7 @@
             this.btnAddEmployee.TabIndex = 10;
             this.btnAddEmployee.Text = "ADD EMPLOYEE";
             this.btnAddEmployee.UseVisualStyleBackColor = false;
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // btnSalary
             // 
@@ -153,6 +165,7 @@
             this.btnSalary.TabIndex = 11;
             this.btnSalary.Text = "SALARY";
             this.btnSalary.UseVisualStyleBackColor = false;
+            this.btnSalary.Click += new System.EventHandler(this.btnSalary_Click);
             // 
             // btnLogout
             // 
@@ -164,7 +177,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(32, 552);
+            this.btnLogout.Location = new System.Drawing.Point(32, 528);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(80, 32);
             this.btnLogout.TabIndex = 10;
@@ -172,12 +185,52 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.dashboard1);
+            this.panel3.Controls.Add(this.addEmployee1);
+            this.panel3.Controls.Add(this.salary1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(248, 38);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(827, 636);
+            this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // salary1
+            // 
+            this.salary1.Location = new System.Drawing.Point(0, 0);
+            this.salary1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.salary1.Name = "salary1";
+            this.salary1.Size = new System.Drawing.Size(944, 632);
+            this.salary1.TabIndex = 0;
+            // 
+            // addEmployee1
+            // 
+            this.addEmployee1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.addEmployee1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addEmployee1.Location = new System.Drawing.Point(0, 0);
+            this.addEmployee1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addEmployee1.Name = "addEmployee1";
+            this.addEmployee1.Size = new System.Drawing.Size(824, 632);
+            this.addEmployee1.TabIndex = 1;
+            // 
+            // dashboard1
+            // 
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(824, 632);
+            this.dashboard1.TabIndex = 2;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1011, 652);
+            this.ClientSize = new System.Drawing.Size(1075, 674);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -189,6 +242,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -199,10 +253,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblGreeting;
         private System.Windows.Forms.Button btnAddEmployee;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnSalary;
+        private System.Windows.Forms.Panel panel3;
+        private Salary salary1;
+        private AddEmployee addEmployee1;
+        private Dashboard dashboard1;
     }
 }
