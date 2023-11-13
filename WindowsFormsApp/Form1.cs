@@ -60,7 +60,7 @@ namespace WindowsFormsApp
 
                             if (table.Rows.Count >= 1)
                             {
-                                MessageBox.Show("Login Successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                //MessageBox.Show("Login Successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                 MainForm mainForm = new MainForm();
                                 mainForm.Show();

@@ -11,20 +11,19 @@ namespace WindowsFormsApp
     internal class EmployeeData
     {
         public int ID { set; get; }
-        public string FullNames { set; get; }
+        public string EmployeeID { set; get; }
+        public string Name { set; get; }
         public string Gender { set; get; }
-        public string position { set; get; }
-        public string contsctNum { set; get; }
-        public string phyAddress { set; get; }
-        public string photo { set; get; }
-        public int salary { set; get; }
-        public string insertDate { set; get; }
-        public string updateDate { set; get; }
-        public string deleteDate { set; get; }
-        public string status { set; get; }
+        public string Position { set; get; }
+        public string Contact { set; get; }
+        public string Address { set; get; }
+        public string Photo { set; get; }
+        public int Salary { set; get; }     
+        public string Status { set; get; }
 
         SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=MyDatabase;Integrated Security=True");
 
+        //EMPLOYEE
         public List<EmployeeData> employeeListData()
         {
             List<EmployeeData> listdata = new List<EmployeeData>();
@@ -43,15 +42,16 @@ namespace WindowsFormsApp
                         while(reader.Read())
                         {
                             EmployeeData empData = new EmployeeData();
-                            empData.ID = (int)reader["empID"];
-                            empData.FullNames = reader["fullNames"].ToString();
+                            empData.ID = (int)reader["id"];
+                            empData.EmployeeID = reader["empID"].ToString();
+                            empData.Name = reader["fullNames"].ToString();
                             empData.Gender = reader["gender"].ToString();
-                            empData.position = reader["position"].ToString();
-                            empData.contsctNum = reader["contactNum"].ToString();
-                            empData.phyAddress = reader["phyAddress"].ToString();
-                            empData.photo = reader["photo"].ToString();
-                            empData.salary = (int)reader["salary"];
-                            empData.status = reader["Status"].ToString();
+                            empData.Position = reader["position"].ToString();
+                            empData.Contact = reader["contactNum"].ToString();
+                            empData.Address = reader["phyAddress"].ToString();
+                            empData.Photo = reader["photo"].ToString();
+                            empData.Salary = (int)reader["salary"];
+                            empData.Status = reader["Status"].ToString();
 
                             listdata.Add(empData);
                         }
@@ -67,6 +67,6 @@ namespace WindowsFormsApp
                 }
             }
             return listdata;
-        }
+        }        
     }
 }

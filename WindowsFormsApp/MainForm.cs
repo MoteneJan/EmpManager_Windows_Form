@@ -65,6 +65,13 @@ namespace WindowsFormsApp
             dashboard1.Visible = true;
             addEmployee1.Visible = false;
             salary1.Visible = false;
+
+            Dashboard dashForm = dashboard1 as Dashboard;
+
+            if(dashForm != null)
+            {
+                dashForm.RefreshData(); 
+            }
         }
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
@@ -72,6 +79,13 @@ namespace WindowsFormsApp
             dashboard1.Visible = false;
             addEmployee1.Visible = true;
             salary1.Visible = false;
+
+            AddEmployee addEmpForm = addEmployee1 as AddEmployee;
+
+            if(addEmpForm != null)
+            {
+                addEmpForm.RefreshData();
+            }
         }
 
         private void btnSalary_Click(object sender, EventArgs e)
@@ -79,6 +93,13 @@ namespace WindowsFormsApp
             dashboard1.Visible = false;
             addEmployee1.Visible = false;
             salary1.Visible = true;
+
+            Salary salForm = salary1 as Salary;
+
+            if (salForm != null)
+            {
+                salForm.RefreshData();
+            }
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
